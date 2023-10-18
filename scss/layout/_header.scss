@@ -14,6 +14,7 @@
   }
 }
 .top-bar {
+  position: relative;
   @extend %flexItemCenter;
   @include abstracts.breakpoint(lg) {
     justify-content: space-between;
@@ -35,16 +36,30 @@
   @include abstracts.breakpoint(lg) {
     display: none;
   }
+  &__item {
+    &:first-child a {
+      padding-left: 0;
+    }
+    &:last-child a {
+      padding-right: 0;
+    }
+    &:hover {
+      .dropdown {
+        display: block;
+      }
+    }
+  }
   &__list {
     @extend %flexItemCenter;
-    gap: 30px;
   }
   &__link {
+    height: 50px;
     @extend %flexItemCenter;
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 146.667%;
     gap: 6px;
+    padding: 0 15px;
   }
 }
 
