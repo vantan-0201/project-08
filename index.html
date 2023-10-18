@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,9 +27,24 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" href="./assets//fonts/stylesheet.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script src="./assets/js/scripts.js"></script>
   </head>
 
   <body>
-    <h1>hello</h1>
+    <header id="header" class="header"></header>
+    <script>
+      load("#header", "./templates/header.html");
+    </script>
+    <div class="container">
+      <h1>hello</h1>
+
+      <footer id="footer"></footer>
+      <script>
+        load("#footer", "./templates/footer.html");
+      </script>
+    </div>
   </body>
 </html>

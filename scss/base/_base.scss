@@ -11,4 +11,29 @@ html {
 body {
   font-size: 1.6rem;
   font-family: Gordita, "Times New Roman", Times, sans-serif;
+  color: var(--text-color);
+  background: var(--body-bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  color: inherit;
+}
+
+.icon {
+  filter: var(--icon-color);
 }
