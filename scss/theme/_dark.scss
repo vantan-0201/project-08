@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 html.dark {
   --text-color: #ffffff;
   --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%)
@@ -15,4 +17,21 @@ html.dark {
   --dropdown-arrow-color: brightness(0) saturate(100%) invert(23%) sepia(8%)
     saturate(344%) hue-rotate(148deg) brightness(96%) contrast(93%);
   --top-menu-border-color: #171c28;
+
+  // home
+  --home-heading-color: #ffffff;
+  --cate-item-bg: #171c28;
+  --cate-item-thumb-bg: #292e39;
+  --cate-item-title-color: #ffffff;
+  --cate-item-desc-color: #ffffff;
+
+  // button
+  --filter-btn-color: #ffffff;
+  --filter-btn-bg: #171c28;
+  --like-btn-shadow: rgba(124, 124, 124, 0.2);
+  --like-btn-bg: #292e39;
+
+  // product card
+  --product-card-bg: #171c28;
+  --product-card-shadow: rgba(0, 0, 0, 0.2);
 }
