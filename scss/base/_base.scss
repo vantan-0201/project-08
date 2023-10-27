@@ -30,12 +30,21 @@ button {
   cursor: pointer;
 }
 
+a,
+img,
 button,
 input,
 textarea,
 select {
   font-family: inherit;
   color: inherit;
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input {
+  background: transparent;
 }
 
 .icon {
